@@ -24,7 +24,7 @@ import {
 } from 'lucide-react';
 import { NavItem, Service, Stat, JobSeekerCard, Industry } from './types';
 
-export const COMPANY_NAME = "HRassistance Consultancy LLP";
+export const COMPANY_NAME = "HRassistance India Consultancy LLP";
 export const CONTACT_EMAIL = "info@hrassistance.co.in";
 
 
@@ -60,13 +60,13 @@ export const NAV_ITEMS: NavItem[] = [
     label: 'Job Seekers',
     path: '/job-seekers',
     children: [
-      { label: 'Browse Jobs', path: 'https://hrassistance.zohorecruit.com/jobs/Careers' },
+      { label: 'Browse Jobs', path: 'https://talent.hrassistance.co.in/careers', isExternal: true },
+      { label: 'Education Jobs', path: 'https://www.edassist.co.in', isExternal: true },
       { label: 'Upskilling Courses', path: 'https://skilling.wadhwanifoundation.org/en/register?instituteCode=HRAS-91-854369', isExternal: true },
       { label: 'Resume Building', path: '/job-seekers/cv-builder' },
     ]
   },
 
-  { label: 'Contact Us', path: '/contact' },
 ];
 
 export const SERVICES: Service[] = [
@@ -178,7 +178,7 @@ export const JOB_SEEKER_CARDS: JobSeekerCard[] = [
     description: 'Explore opportunities with top MNCs and Indian firms.',
     icon: Briefcase,
     actionText: 'Browse Jobs',
-    path: 'https://hrassistance.zohorecruit.com/jobs/Careers',
+    path: 'https://talent.hrassistance.co.in/careers',
     isExternal: true
   },
   {
