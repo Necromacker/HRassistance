@@ -169,14 +169,12 @@ const Recruitizr: React.FC = () => {
             </p>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-8">
             {outcomes.map((o) => (
-              <div key={o.value} className="flex gap-5 items-start">
-                <span className="font-extrabold text-2xl text-corporate-blue dark:text-blue-400 whitespace-nowrap min-w-[80px]">{o.value}</span>
-                <div>
-                  <h3 className="font-bold text-sm text-gray-900 dark:text-white mb-1">{o.title}</h3>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">{o.desc}</p>
-                </div>
+              <div key={o.value} className="border-l-4 border-corporate-blue dark:border-blue-400 pl-5">
+                <span className="font-extrabold text-2xl text-corporate-blue dark:text-blue-400 block mb-1">{o.value}</span>
+                <h3 className="font-bold text-sm text-gray-900 dark:text-white mb-1">{o.title}</h3>
+                <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">{o.desc}</p>
               </div>
             ))}
           </div>
