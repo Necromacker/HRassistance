@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   ArrowRight, BarChart3, Brain, CheckCircle, Database,
-  GitBranch, Layers, Shield, Sparkles, Users
+  GitBranch, Layers, Shield, Users
 } from 'lucide-react';
 
 const capabilities = [
@@ -113,12 +113,11 @@ const Recruitizr: React.FC = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-10 flex items-center gap-4 shadow-lg">
-              <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
-                <Sparkles className="w-6 h-6 text-white" />
-              </div>
-              <span className="font-bold text-2xl text-gray-900 dark:text-white">Recruitizr</span>
-            </div>
+            <img
+              src="/assets/recruitizr-logo.jpeg"
+              alt="Recruitizr"
+              className="max-w-xs md:max-w-sm rounded-2xl"
+            />
           </div>
         </div>
       </section>
